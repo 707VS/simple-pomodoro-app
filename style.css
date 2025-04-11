@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.theme-icon {
+  position: relative;
+  top: 3px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.options button,
+.themes button {
+  font-family: 'Space Grotesk';
+  font-weight: 500;
+  background-color: #000;
+  color: #fff;
+  margin: 0 20px;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.themes {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100%;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#time {
+  color: #fff;
+  font-size: 150px;
+  font-family: 'Space Grotesk';
+  font-weight: 500;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.controls button {
+  font-family: 'Space Grotesk';
+  font-weight: 500;
+  background-color: #fff;
+  color: #000;
+  font-size: 28px;
+  padding: 10px 40px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.controls button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.reset-button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: black;
+  border: none;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.controls button:hover  {
+  background-color: #fff;
+  color: #000;
+}
+
+/*THEMES TOGGLER */
+
+/* Tema claro (default) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.options button,
+.themes button {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000;
+}
+
+.options button:hover,
+.themes button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Controles */
+.controls button {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000;
+}
+
+.controls button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Tempo */
+#time {
+  color: #000000;
+}
+
+/* Botão de reset */
+.reset-button button {
+  background-color: #ffffff;
+}
+
+/* ================================ */
+/* Tema escuro */
+body.dark-theme {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.dark-theme .options button,
+body.dark-theme .themes button {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+body.dark-theme .options button:hover,
+body.dark-theme .themes button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-theme .controls button {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
+}
+
+body.dark-theme .controls button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.dark-theme #time {
+  color: #ffffff;
+}
+
+body.dark-theme .reset-button button {
+  background-color: #000000;
+}

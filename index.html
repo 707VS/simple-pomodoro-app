@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PomoFoci</title>
+  <link rel="shortcut icon" href="/assets/pomodoro.svg" type="image/x-icon">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="dark-theme">
+  <div class="container">
+    <div class="pomodoro">
+      <div class="options">
+        <button onclick="pomodoro()" id="study">Pomodoro</button>
+        <button onclick="shortBreak()" id="shortBreak">Short Break</button>
+        <button onclick="longBreak()" id="longBreak">Long Break</button>
+      </div>
+      <div class="timer">
+        <div id="time">
+          25:00
+        </div>
+        <div class="controls">
+          <button onclick="startTimer()"><img id="start" src="" alt="">Start</button>
+          <button onclick="pauseTimer()"><img id="pause" src="" alt="">Pause</button>
+          <div class="reset-button">
+            <button onclick="resetTimer()"><img id="reset" src="reset.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+      <div class="themes">
+        <button id="dark-btn"><img class="theme-icon" src="/assets/full-moon.png" alt="moon-icon"> Dark</button>
+        <button id="light-btn"> <img class="theme-icon" src="/assets/sun.png" alt="sun-icon"> Light</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
